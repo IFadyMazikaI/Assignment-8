@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's For Dinner</title>
+    <link rel="shortcut icon" href="./images/meal.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md shadow-nav fixed-top bg-white">
+      <div class="container-fluid p-2 px-3 p-xl-0 mycont-xl">
+        <div class="left-logo d-flex align-items-center">
+          <span
+            class="bg-danger rounded-circle p-3 text-white d-flex justify-content-center align-items-center logo-color"
+            ><i class="fa-solid fa-utensils"></i
+          ></span>
+          <div class="ms-2 line-height">
+            <h5 class="fw-bold">What's For Dinner</h5>
+            <span class="text-secondary nav-font"
+              >Your daily meal inspiration</span
+            >
+          </div>
+        </div>
+        <button
+          class="navbar-toggler d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="nav-border mt-4"></div>
+          <ul class="navbar-nav mt-3 mt-xl-2 pb-md-1 d-md-flex justify-content-md-end w-100">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"
+                ><span><i class="fa-solid fa-bookmark"></i></span
+                ><span class="ms-2 d-md-none">Saved Recipes</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><span><i class="fa-solid fa-clock-rotate-left"></i></span
+                ><span class="ms-2 d-md-none">Recent</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><span><i class="fa-solid fa-gear"></i></span
+                ><span class="ms-2 d-md-none">Settings</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="#">
+                <div class="image-profile">
+                  <img
+                    class="w-100 rounded-circle"
+                    src="./images/avatar-4.jpg"
+                    alt="avatar4"
+                  />
+                </div>
+                <span class="ms-2 d-md-none">Profile</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="header-bg min-vh-100 py-5">
+      <div class="container-fluid py-5 mycont-xl">
+        <div class="mycard bg-white mt-3 mt-md-5 mt-xl-3 rounded-4 d-xl-flex" id="mealCard">
+          <div class="mycard-lft">
+            <div class="card-image position-relative">
+              <div class="badge-1 position-absolute w-100">
+                <span
+                  class="bg-white rounded-pill p-2 position-absolute badge-position" id="mealRate"
+                  ><i class="fa-solid fa-star text-warning"></i> 4.9
+                  <span class="text-secondary">(478 reviews)</span></span
+                >
+              </div>
+              <img
+                class="w-100 image-hero" id="mealImage"
+                src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=800&auto=format&fit=crop"
+                alt="pasta"
+              />
+              <div
+                class="badge-data d-flex justify-content-between justify-content-sm-around position-absolute bg-white rounded-4 p-3 badge-position2"
+              >
+                <div class="left-part text-center">
+                  <span><i class="fa-solid fa-clock color-orange"></i></span>
+                  <span class="text-secondary d-block">Prep Time</span>
+                  <span class="fw-bold" id="mealPrepTime">45 min</span>
+                </div>
+                <div class="middle-part text-center">
+                  <span><i class="fa-solid fa-fire-burner color-red"></i></span>
+                  <span class="text-secondary d-block">Cook Time</span>
+                  <span class="fw-bold" id="mealCookTime">15 min</span>
+                </div>
+                <div class="right-part text-center">
+                  <span><i class="fa-solid fa-users color-blue"></i></span>
+                  <span class="text-secondary d-block">Servings</span>
+                  <span class="fw-bold" id="mealServings">4 people</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mycard-right p-3 px-xl-5">
+            <div
+              class="mycard-right-logos d-flex flex-row-reverse pt-3 color-orange"
+            >
+              <span class="logo-bg p-3 rounded-4"
+                ><i class="fa-solid fa-share-nodes"></i
+              ></span>
+              <span class="me-3 logo-bg p-3 rounded-4"
+                ><i class="fa-solid fa-bookmark"></i
+              ></span>
+            </div>
+            <div class="badges-right mt-3">
+              <span class="rounded-pill color-green px-3 me-2 py-1" id="mealDifficulty"
+                >Intermediate</span
+              >
+              <span class="rounded-pill color-blue bg-color-blue px-3 py-1" id="mealCuisine"
+                >Italian</span
+              >
+            </div>
+            <div class="meal-about">
+              <h1 class="pt-3 fw-semibold" id="mealName">Margherita Pizza</h1>
+              <p class="text-secondary" id="mealDescription">
+                Classic Italian pizza with fresh mozzarella and basil
+              </p>
+            </div>
+            <div class="meal-time d-flex align-items-center rounded-3">
+              <span class="ms-3"
+                ><i class="fa-solid fa-warning text-danger"></i
+              ></span>
+              <div class="meal-time-detail ms-2 p-3">
+                <span class="d-block fw-semibold color-wine">
+                  Extended Preparation Time
+                </span>
+                <span class="text-danger">
+                  This recipe requires more than 45 minutes to prepare. Plan
+                  accordingly!
+                </span>
+              </div>
+            </div>
+            <ul class="nav nav-tabs active pt-3 px-lg-4" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="home-tab-pane"
+                  aria-selected="true"
+                >
+                  <span class="nav-font tabs-md"
+                    ><i class="fa-solid fa-list-check"></i> Ingredients</span
+                  >
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile-tab-pane"
+                  aria-selected="false"
+                >
+                  <span class="nav-font tabs-md"
+                    ><i class="fa-solid fa-book-open"></i> Instructions</span
+                  >
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact-tab-pane"
+                  aria-selected="false"
+                >
+                  <span class="nav-font tabs-md"
+                    ><i class="fa-solid fa-chart-pie"></i> Nutrition</span
+                  >
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="disabled-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#disabled-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="disabled-tab-pane"
+                  aria-selected="false"
+                >
+                  <span class="nav-font tabs-md"
+                    ><i class="fa-solid fa-lightbulb"></i> Chef's Tips</span
+                  >
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content mt-3 rounded-3 mycont" id="myTabContent">
+              <div
+                class="tab-pane fade show active p-3 rounded-3 ing-card-bg"
+                id="home-tab-pane"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+                tabindex="0"
+              >
+                <span class="d-flex align-items-center mb-3">
+                  <span
+                    class="rounded-circle text-white fw-bold text-center me-2 number-style"
+                  >
+                    1
+                  </span>
+                  300g pizza dough
+                </span>
+                <span class="d-flex align-items-center mb-3">
+                  <span
+                    class="rounded-circle text-white fw-bold text-center me-2 number-style"
+                  >
+                    2
+                  </span>
+                  200g crushed tomatoes
+                </span>
+                <span class="d-flex align-items-center mb-3">
+                  <span
+                    class="rounded-circle text-white fw-bold text-center me-2 number-style"
+                  >
+                    3
+                  </span>
+                  250g fresh mozzarella
+                </span>
+                <span class="d-flex align-items-center mb-3">
+                  <span
+                    class="rounded-circle text-white fw-bold text-center me-2 number-style"
+                  >
+                    4
+                  </span>
+                  Fresh basil leaves
+                </span>
+                <span class="d-flex align-items-center mb-3">
+                  <span
+                    class="rounded-circle text-white fw-bold text-center me-2 number-style"
+                  >
+                    5
+                  </span>
+                  2 tablespoons olive oil
+                </span>
+                <span class="d-flex align-items-center mb-3">
+                  <span
+                    class="rounded-circle text-white fw-bold text-center me-2 number-style"
+                  >
+                    6
+                  </span>
+                  2 cloves garlic, minced
+                </span>
+                <span class="d-flex align-items-center mb-3">
+                  <span
+                    class="rounded-circle text-white fw-bold text-center me-2 number-style"
+                  >
+                    7
+                  </span>
+                  Salt and pepper to taste
+                </span>
+                <span class="d-flex align-items-center mb-3">
+                  <span
+                    class="rounded-circle text-white fw-bold text-center me-2 number-style"
+                  >
+                    8
+                  </span>
+                  Parmesan cheese for topping
+                </span>
+              </div>
+              <div
+                class="tab-pane fade p-3"
+                id="profile-tab-pane"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+                tabindex="0"
+              >
+                <span class="d-flex align-items-center mb-3">
+                  <span
+                    class="rounded-4 text-white fw-bold text-center me-3 bg-orange fs-4 p-3 ins-width"
+                  >
+                    1
+                  </span>
+                  Let pizza dough come to room temperature and rest for 1 hour.
+                </span>
+                <span class="d-flex align-items-center mb-3">
+                  <span
+                    class="rounded-4 text-white fw-bold text-center me-3 bg-orange fs-4 p-3 ins-width"
+                  >
+                    2
+                  </span>
+                  Preheat oven to maximum temperature (usually 250°C/480°F).
+                </span>
+                <span class="d-flex align-items-center mb-3">
+                  <span
+                    class="rounded-4 text-white fw-bold text-center me-3 bg-orange fs-4 p-3 ins-width"
+                  >
+                    3
+                  </span>
+                  Mix crushed tomatoes with olive oil, garlic, salt, and pepper
+                  for the sauce.
+                </span>
+                <span class="d-flex align-items-center mb-3">
+                  <span
+                    class="rounded-4 text-white fw-bold text-center me-3 bg-orange fs-4 p-3 ins-width4"
+                  >
+                  4
+                  </span>
+                  Roll out dough on a floured surface to desired thickness.
+                </span>
+                <span class="d-flex align-items-center mb-3">
+                  <span
+                    class="rounded-4 text-white fw-bold text-center me-3 bg-orange fs-4 p-3 ins-width"
+                  >
+                    5
+                  </span>
+                  Spread tomato sauce, add torn mozzarella pieces, and drizzle
+                  with olive oil.
+                </span>
+                <span class="d-flex align-items-center mb-3">
+                  <span
+                    class="rounded-4 text-white fw-bold text-center me-3 bg-orange fs-4 p-3 ins-width"
+                  >
+                    6
+                  </span>
+                  Bake for 10-12 minutes until crust is golden. Top with fresh
+                  basil and parmesan.
+                </span>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="contact-tab-pane"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+                tabindex="0"
+              >
+                <div class="all-cards d-md-flex flex-md-wrap gap-md-2">
+                  <div class="mycardd mb-3 rounded-3 d-flex justify-content-between p-4">
+                    <span class="d-flex align-items-center"><span class="bg-logo bg-logo1 rounded-3 text-center"><i class="fa-solid fa-fire first-logo"></i></span> Calories</span>
+                    <span class=" fw-semibold">380 kcal</span>
+                  </div>
+                  <div class="mycardd mb-3 rounded-3 d-flex justify-content-between p-4">
+                    <span class="d-flex align-items-center"><span class="bg-logo bg-logo2 rounded-3 text-center"><i class="fa-solid fa-dumbbell second-logo"></i></span> Protein</span>
+                    <span class=" fw-semibold">45 kcal</span>
+                  </div>
+                  <div class="mycardd mb-3 rounded-3 d-flex justify-content-between p-4">
+                    <span class="d-flex align-items-center"><span class="bg-logo bg-logo3 rounded-3 text-center"><i class="fa-brands fa-pagelines third-logo"></i></span> Carbohydrates</span>
+                    <span class=" fw-semibold">90 kcal</span>
+                  </div>
+                  <div class="mycardd mb-3 rounded-3 d-flex justify-content-between p-4">
+                    <span class="d-flex align-items-center"><span class="bg-logo bg-logo4 rounded-3 text-center"><i class="fa-solid fa-droplet fourth-logo"></i></span> Fat</span>
+                    <span class=" fw-semibold">16 kcal</span>
+                  </div>
+                  <div class="mycardd mb-3 rounded-3 d-flex justify-content-between p-4">
+                    <span class="d-flex align-items-center"><span class="bg-logo bg-logo5 rounded-3 text-center"><i class="fa-solid fa-seedling fifth-logo"></i></span> Fiber</span>
+                    <span class=" fw-semibold">0 kcal</span>
+                  </div>
+                  <div class="mycardd mb-3 rounded-3 d-flex justify-content-between p-4">
+                    <span class="d-flex align-items-center"><span class="bg-logo bg-logo6 rounded-3 text-center"><i class="fa-solid fa-cube sixth-logo"></i></span> Sodium</span>
+                    <span class=" fw-semibold">500 kcal</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="disabled-tab-pane"
+                role="tabpanel"
+                aria-labelledby="disabled-tab"
+                tabindex="0"
+              >
+                <div class="tips d-flex align-items-center rounded-3 mb-3">
+                  <span class="ms-3"
+                    ><i class="fa-solid fa-circle-check check-color"></i></i
+                  ></span>
+                  <div class="tips-detail p-3">
+                    <span>
+                      Use a pizza stone for crispier crust
+                    </span>
+                  </div>
+                </div>
+                <div class="tips d-flex align-items-center rounded-3 mb-3">
+                  <span class="ms-3"
+                    ><i class="fa-solid fa-circle-check check-color"></i></i
+                  ></span>
+                  <div class="tips-detail p-3">
+                    <span>
+                      Don't overload with toppings - less is more
+                    </span>
+                  </div>
+                </div>
+                <div class="tips d-flex align-items-center rounded-3 mb-3">
+                  <span class="ms-3"
+                    ><i class="fa-solid fa-circle-check check-color"></i></i
+                  ></span>
+                  <div class="tips-detail p-3">
+                    <span>
+                      Add basil after baking to keep it fresh
+                    </span>
+                  </div>
+                </div>
+                <div class="tips d-flex align-items-center rounded-3 mb-3">
+                  <span class="ms-3"
+                    ><i class="fa-solid fa-circle-check check-color"></i></i
+                  ></span>
+                  <div class="tips-detail p-3">
+                    <span>
+                      Let dough rest properly for best texture
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mycard-border border border-opacity-10 my-4 w-100"></div>
+            <button class="logo-color text-white rounded-3 p-2 btn mybtn" onclick="randomRecipe()"><i class="fa-solid fa-rotate"></i> Try Another Recipe </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

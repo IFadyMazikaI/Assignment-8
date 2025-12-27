@@ -1,0 +1,117 @@
+@media screen and (min-width: 576px) {
+    .mycard-lft img{
+    height: 400px;
+}
+    header .mycont-xl {
+    width: 97%;
+}
+.badge-position2{
+    width: 90%;
+    right:  5%;
+    
+}
+.nav {
+    justify-content: space-between;
+    padding-block: 10px;
+}
+
+.ins-width{
+    width: 10%;
+}
+
+.ins-width4{
+    width: 9%;
+}
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .navbar-nav{
+        font-size: 20px;
+    }
+    .mycard-lft img{
+    height: 420px;
+    }
+    .badge-position2{
+        font-size: 17px;
+    }
+    .ins-width4{
+    width: 10%;
+    }
+    .mycardd{
+        width: 48%;
+    }
+    .tabs-md{
+        font-size: 16px;
+    }
+    .mycard-right-logos{
+        margin-bottom: -70px;
+    }
+}   
+
+
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+    .mycard-lft img{
+    height: 470px;
+    }
+    header .mycont-xl {
+        width: 95%;
+    }
+    .badge-position{
+        font-size: 15px;
+        left:2%;
+        top:20px;
+    }
+}  
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+    .navbar .mycont-xl{
+        width: 90%;
+    }
+    header .mycont-xl {
+        width: 92%;
+    }
+    img.image-hero{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+    }
+    .mycard-lft img{
+    height: 780px;
+    }
+    .mycard-lft{
+        width: 50%;
+    }
+    .mycard-right{
+        width: 60%;
+        max-height: 750px;
+        padding-inline: 50px;
+        overflow: auto;
+    }
+    
+    .badge-position{
+        font-size: 15px;
+        left:5%;
+        top:20px;
+    }
+     .image-profile img{
+        margin-top: -4px;
+    }
+}
